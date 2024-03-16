@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/places.css">
+    <link rel="stylesheet" href="/stylesheets/AllPlaces.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nleft">
+              <a href="/Cover" class="nlink">Home</a>
+              <a href="/Places" class="nlink">Places</a>
+              <a href="/Gallery" class="nlink">Gallery</a>
+            </div>
+            <div class="nmid">
+              <a href="" class="nlink">Traveller's Treasure
+            </a>
+            </div>
+            <div class="nright">
+              <a href="/" class="nlink">Add Places</a>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="left">
+                <div class="name">
+                    <k><%= one.name %></k>
+                    <m><%= one.description1 %></m>
+                </div>
+                <div class="hel">
+                    <i class="ri-map-pin-fill"></i>
+                    <%= one.site %>
+                </div>
+            </div>
+            <div class="right">
+              <img src="<%= one.imageLink1 %>" alt="">
+            </div>
+           
+        </div>
+        <div class="history">
+            <div class="img">
+                <img src="<%= one.imageLink2 %>" alt="">
+                
+                
+            </div>
+            <div class="title">
+                <div class="top">
+                    short history of <span><%= one.name %></span>
+  
+                </div>
+               
+                <div class="histxt">
+                  <%= one.description2 %>
+                </div>
+            </div>
+           
+        </div>
+        <div class="conectivity">
+           <div class="heading">
+            location
+           </div>
+           <div class="location">
+            <iframe src="<%= one.locationLink %>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+           </div>
+           
+            
+           
+        </div>
+        <div class="nearest">
+            <div class="nearheading">
+                Other Tourist places
+            </div>
+            <% usersss.forEach(item => { %>
+            <div class="placesdiv">
+                <div class="spots">
+                    <div class="placeimg">
+                        <a href="/places/<%= item.name %>">
+                            <img src="<%= item.imageLink1 %>" alt="">
+                            <k class="select">
+                                 <%= item.name %>
+                                 
+
+                        </a>
+                       
+
+                           
+                               
+                        </k>
+
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <% }); %>
+            
+            
+        </div>
+        <div class="footer">
+            Copywright 
+            <i class="ri-copyright-line"></i>
+            2024 Souradeep. All Right Reserved
+  
+        </div>
+  
+      </div>
+    
+    
+</body>
+</html>

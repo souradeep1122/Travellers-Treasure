@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1{
+  color: rgb(0, 203, 186);
+  font-size: 3vw;
+  font-weight: 900;
+}
+.maindiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1638273349088-eec0b06c1765?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+ 
+  background-size: cover;
+  height: 50vw;
+}
+
+.form {
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(117, 116, 116, 0.461);
+  
+  gap: 1vw;
+  height: 30vw;
+  width: 45vw;
+  border-radius: 10px;
+border: 5px solid rgb(0, 0, 0);
+ 
+  
+
+ 
+}
+form input {
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  border: 1px solid transparent;
+  color: rgb(255, 255, 255);
+  padding: 0.4vw;
+  width: 8vw;
+  border-radius: 20px;
+}
+textarea {
+  font-size: 1.5vw;
+}
+textarea::placeholder {
+  font-size: 1.5vw;
+  padding: 3px;
+}

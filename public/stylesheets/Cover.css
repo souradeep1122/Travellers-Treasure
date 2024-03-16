@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 3vw 10vw;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  letter-spacing: -0.1px;
+  background-color: transparent;
+
+  font-size: 1vw;
+  font-weight: 700;
+}
+.nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+}
+.nleft {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+.nright {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+.nmid {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*home*/
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding: 0vw 5vw;
+}
+.left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8vw;
+
+  justify-content: center;
+  width: 22vw;
+
+  padding: 1vw;
+}
+.left img {
+  height: 22vw;
+  width: 16vw;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  position: relative;
+}
+.leftxt {
+  font-size: 1.2vw;
+}
+.mid img {
+  width: 25vw;
+  height: 35vw;
+  border-radius: 150px;
+  object-fit: cover;
+}
+.midtxt {
+  position: absolute;
+  font-size: 9vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.midtxt x:hover {
+  cursor: pointer;
+  background-image: url(https://www.delhimetrotimes.in/photos/2021/03/best-places-in-kolkata.jpg);
+  background-position: 0px -70px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 22vw;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+
+  justify-content: flex-start;
+  width: 22vw;
+
+  padding: 1vw;
+}
+.right img {
+  height: 22vw;
+  width: 16vw;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.rightxt {
+  font-size: 1.8vw;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: green;
+}
+.rightxt i {
+  border: 1px solid green;
+  padding: 0.2vw;
+  border-radius: 50px;
+}
+.rightxt a {
+  text-decoration: none;
+  color: green;
+}
+
+.explore {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5vw 5vw;
+}
+.explore button {
+  font-size: 1.5vw;
+  border: 1.5px solid transparent;
+
+  padding: 1vw;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.7vw;
+  border-radius: 50px;
+  justify-content: center;
+}
+.explore a {
+  text-decoration: none;
+  color: black;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 0vw 5vw;
+  align-items: center;
+  gap: 1vw;
+}
+
+/* members*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-10px);
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.member h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.member p {
+  margin: 0;
+  color: #666;
+}
+
+/*footer*/
+.footer {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+}

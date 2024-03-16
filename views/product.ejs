@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="/stylesheets/AllPlaces.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+   
+  
+</head>
+<body>
+    <div id="product-list">
+        <div class="main">
+            <div class="nav">
+                <div class="nleft">
+                  <a href="/Cover" class="nlink">Home</a>
+                  <a href="/places" class="nlink">Places</a>
+                  <a href="/Gallery" class="nlink">Gallery</a>
+                </div>
+                <div class="nmid">
+                  <a href="" class="nlink">Traveller's Treasure</a>
+                </div>
+                <div class="nright">
+                  <a href="/" class="nlink">Add Place</a>
+                </div>
+            </div>
+            <div class="AllPlaces">
+                <div class="PlaceHeading">
+                    All Tourist Destination
+                </div>
+               
+                   
+
+                 <div class="PlacesDiv">
+                  <% usersss.forEach(item => { %>
+                    <a href="/places/<%= item.name %>">
+                        <div class="Imgdiv">
+                            <img src="<%= item.imageLink1 %>" alt="">
+                            <div class="ImgName"> <%= item.name %></div>
+                          </div>
+
+                    
+                    
+                    </a>
+                    <% }); %>
+                    
+                </div>
+                  
+                
+                
+            </div>
+            <div class="footer">
+                Copywright 
+                <i class="ri-copyright-line"></i>
+                2024 Souradeep. All Right Reserved
+    
+            </div>
+    
+        </div>
+
+    </div>
+    <script src="/javascripts/product.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    
+
+    <script>
+        
+      const select= document.querySelector(".select");
+      select.addEventListener('click', function(){
+        console.log(usersss.name);
+      })
+
+           
+    </script>
+</body>
+</html>

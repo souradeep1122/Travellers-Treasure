@@ -1,0 +1,122 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Form</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/places.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nleft">
+          <a href="/Cover" class="nlink">Home</a>
+          <a href="/Places" class="nlink">Places</a>
+          <a href="/Gallery" class="nlink">Gallery</a>
+        </div>
+        <div class="nmid">
+          <a href="" class="nlink">Traveller's Treasure</a>
+        </div>
+        <div class="nright">
+          <a href="/GalleryPost" class="nlink">Post Images</a>
+        </div>
+      </div>
+      <div class="mainForm">
+        <div class="form">
+          <h1>Add Places</h1>
+          <form action="/" method="post">
+            <label for="name"></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Place name"
+            />
+            <br />
+  
+            <label for="imageLink1"></label>
+            <input
+              type="text"
+              name="imageLink1"
+              id="imageLink1"
+              required
+              placeholder="Main Image link"
+            />
+            <br />
+  
+            <label for="imageLink2"></label>
+            <input
+              type="text"
+              name="imageLink2"
+              id="imageLink2"
+              required
+              placeholder="Short Image link"
+            />
+            <br />
+            <br />
+            <label for="site"></label>
+            <input
+              type="text"
+              name="site"
+              id="site"
+              required
+              placeholder="Site(ex- pilgrimage,heritage...)"
+            />
+            <br />
+            <br />
+            <label for="description1"></label>
+            <input
+              type="text"
+              name="description1"
+              id="description1"
+              required
+              placeholder="Short description (Max:15words)"
+            />
+            <br />
+            <label for="description2"></label>
+            <input
+              type="text"
+              name="description2"
+              id="description2"
+              required
+              placeholder="Long description (Max:50Words)"
+            />
+            <br />
+  
+            <textarea
+              rows="7"
+              cols="50"
+              class="txt"
+              type="text"
+              name="locationLink"
+              id="locationLink"
+              required
+              placeholder="Location link 
+          step1:Open Location Of Place In maps
+          step2:Share and Copy the Embedeb Map
+          step3:paste the Link only not the html part
+          Ex:https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.387443440752!2d88.34068420967333!3d22.56460807941191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02779ff7e5b9af%3A0x1d1b1884bdbbbd79!2sEden%20Gardens!5e0!3m2!1sen!2sin!4v1707592372468!5m2!1sen!2sin"
+            ></textarea>
+  
+            <button type="submit" action="/submitted" id="sub">Submit</button>
+          </form>
+        </div>
+
+      </div>
+     
+    </div>
+
+    <script>
+      let nam = document.querySelector("#nam");
+      let rol = document.querySelector("#rol");
+      let sub = document.querySelector("#sub");
+      sub.addEventListener("click", function () {
+        alert("sucessfully submitted");
+      });
+    </script>
+  </body>
+</html>

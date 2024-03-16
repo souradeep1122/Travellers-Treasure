@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/Cover.css" />
+    <link rel="stylesheet" href="/stylesheets/Gallery.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nleft">
+          <a href="/Cover" class="nlink">Home</a>
+          <a href="/places" class="nlink">Places</a>
+          <a href="" class="nlink">Gallery</a>
+        </div>
+        <div class="nmid">
+          <a href="" class="nlink">Traveller's Treasure</a>
+        </div>
+        <div class="nright">
+          <a href="/GalleryPost" class="nlink">Post Images</a>
+        </div>
+      </div>
+      <div class="gallery">
+        <% usersss.forEach(item => { %>
+        <div class="gallery-wrapper">
+          <img src="<%= item.GalleryImg %>" alt="" />
+        </div>
+        <% }); %>
+      </div>
+      <div class="footer">
+        Copywright
+        <i class="ri-copyright-line"></i>
+        2024 Souradeep. All Right Reserved
+      </div>
+    </div>
+  </body>
+</html>

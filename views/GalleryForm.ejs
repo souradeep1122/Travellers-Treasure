@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Images</title>
+    <link rel="stylesheet" href="/stylesheets/GalleryPostForm.css" />
+    <link rel="stylesheet" href="/stylesheets/places.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav">
+        <div class="nleft">
+          <a href="/Cover" class="nlink">Home</a>
+          <a href="/places" class="nlink">Places</a>
+          <a href="/Gallery" class="nlink">Gallery</a>
+        </div>
+        <div class="nmid">
+          <a href="" class="nlink">Traveller's Treasure</a>
+        </div>
+        <div class="nright">
+          <a href="/" class="nlink">Add Places</a>
+        </div>
+      </div>
+   <div class="maindiv">
+    <div class="form">
+      <h1>Upload Images</h1>
+      <form action="/GalleryPost" method="POST">
+        <label for="GalleryImg"></label><br />
+        <textarea
+          id="GalleryImg"
+          name="GalleryImg"
+          rows="5"
+          cols="50"
+          placeholder="Paste Image Link"
+          required
+        ></textarea
+        ><br /><br />
+        <input type="submit" value="Upload" id="submit" />
+      </form>
+    </div>
+
+   </div>
+     
+    </div>
+  </body>
+</html>

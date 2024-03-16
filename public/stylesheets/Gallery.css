@@ -1,0 +1,32 @@
+.gallery {
+  
+  text-align: center;
+  columns: 4;
+}
+
+.gallery-wrapper {
+  display: inline-block;
+}
+
+.gallery-wrapper img {
+  background-color: green;
+  width: calc(94vw/4);
+  
+  object-fit: cover;
+  gap: 1vw;
+  margin-top: 1vw;
+ 
+  display: flex;
+  transition: ease-in 0.5s;
+
+  border-radius: 8px;
+}
+img:hover{
+  scale: 1.05;
+  cursor: pointer;
+ 
+}
+
+.gallery-wrapper img:hover {
+  transition: transform 0.3s ease;
+}
